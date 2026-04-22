@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MileMapUSA - Distance Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&libraries=places"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">✈ MileMapUSA</div>
+</header>
+
+<section class="hero">
+  <h1>How far is it from <span>city to city?</span></h1>
+  <p>Calculate driving and airline distance between any two cities</p>
+</section>
+
+<section class="calculator">
+
+  <div class="row">
+    <input id="fromCity" placeholder="From (e.g. New York, NY)">
+    
+    <button id="swapBtn" onclick="swapCities()">↔</button>
+    
+    <input id="toCity" placeholder="To (e.g. Washington, DC)">
+  </div>
+
+  <button onclick="calculateDistance()">Calculate Distance</button>
+
+  <div id="result"></div>
+</section>
+
+<div id="map"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
