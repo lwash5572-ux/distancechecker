@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MileMapUSA - Distance Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">✈ MileMapUSA</div>
+  <nav>
+    <a href="#">Calculator</a>
+    <a href="#">Book Travel</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>How far is it from <span>city to city?</span></h1>
+  <p>Calculate driving distance between any two cities</p>
+</section>
+
+<section class="calculator">
+  <div class="input-group">
+    <label>FROM</label>
+    <input type="text" id="fromCity" placeholder="New York, NY">
+  </div>
+
+  <div class="input-group">
+    <label>TO</label>
+    <input type="text" id="toCity" placeholder="Washington, DC">
+  </div>
+
+  <button onclick="calculateDistance()">Calculate Distance</button>
+
+  <div id="result"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
